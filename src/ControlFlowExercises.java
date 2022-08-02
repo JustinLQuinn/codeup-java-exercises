@@ -2,13 +2,17 @@
 import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
+        int i = 0;
+        do {
 
-for(int i = 5; i <= 15; i += 1){
-    System.out.print(i + "\t");
-            if(i == 15){
-                break;
-            }
+                i++;
+                if(i % 2 == 1) {
+                    continue;
+                }
+                System.out.println(i);
 
-        }
+
+        } while (i <= 100);
+
     }
 }
