@@ -11,7 +11,9 @@ public class MethodsExercises {
         Scanner scanner = new Scanner(System.in);
         int userInput = getInteger(1, 10, scanner.nextInt());
 
-
+        System.out.print("Find Factorial for # range 1 to 10: ");
+        Scanner identInteger = new Scanner(System.in);
+        long factorial = lowFactorial(identInteger.nextInt());
     }
 
     public static int Add(int num1, int num2) {
@@ -37,10 +39,16 @@ public class MethodsExercises {
             int userInput = getInteger(min, max, scanner.nextInt());
         } else {
             System.out.println(userInt);
-
         }
         return userInt;
     }
-
+    public static long lowFactorial(int n) {
+        long fact = 1;
+        for (int i = 2; i <= n; i++) {
+            fact = fact * i;
+        }
+        System.out.println(fact);
+        return fact;
+    }
 }
 
