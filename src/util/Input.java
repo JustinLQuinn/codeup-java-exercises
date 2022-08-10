@@ -1,6 +1,5 @@
 package util;
 
-import java.awt.im.InputContext;
 import java.util.Scanner;
 
 public class Input {
@@ -19,7 +18,7 @@ public class Input {
     }
     public int getInt(int min, int max) {
         //print prompt
-        System.out.println("Enter number between 1-48000.");
+//        System.out.println("Enter number between 1-48000.");
         //save int from scanner
         int userInt = scanner.nextInt();
         //check if int is outside min and max

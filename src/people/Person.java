@@ -23,6 +23,11 @@ public class Person {
             return String.format("%s sayes HI!", this.name);
         }
 
+        //method override
+    @Override
+    public String toString() {
+        return name;
+    }
 
     public static void main(String[] args) {
         Person mary = new Person("Mary");
