@@ -42,7 +42,7 @@ public class Input {
     public double getDouble(double min, double max){
         //print prompt
         System.out.println("Enter number between 1-32000000.");
-        //save int from scanner
+        //save double from scanner
         double userNum = scanner.nextDouble();
         //check if int is outside min and max
         if (userNum < min || userNum > max) {
@@ -58,6 +58,7 @@ public class Input {
         boolean var = scanner.hasNextDouble();
         if(var){
             return scanner.nextDouble();
+//            scanner.nextLine();
         }
         return 0;
     }
@@ -65,11 +66,12 @@ public class Input {
     public static void main(String[] args) {
         Input input = new Input();
 
-//        System.out.println(input.getString());
-//        System.out.println(input.yesNo());
-//        System.out.println(input.getInt());
-//        System.out.println(input.getInt(1, 48000));
-//        System.out.println(input.getDouble());
+        System.out.println(input.getString());
+        System.out.println(input.yesNo());
+        System.out.println(input.getInt());
+        System.out.println(input.getInt(1, 48000));
+        System.out.println(input.getDouble());
         System.out.println(input.getDouble(1, 32000000));
+
     }
 }
