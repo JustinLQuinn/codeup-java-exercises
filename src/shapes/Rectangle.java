@@ -6,17 +6,21 @@ public class Rectangle {
 
     public int getArea() {
        int area = this.length * this.width;
+//        System.out.println("Rectangle getArea");
        return area;
+//       return length * width; also still good to use
+    }
+
+    public int getPerimeter() {
+        int perimeter = (2 * this.length) + (2 * this.width);
+//        System.out.println("Rectangle getPerimeter");
+        return perimeter;
+//        return (2 * this.length) + (2 * this.width); good to use
     }
 
     public Rectangle(int width, int length) {
         this.width = width;
         this.length = length;
-    }
-
-    public int getPerimeter() {
-        int perimeter = (2 * this.length) + (2 * this.width);
-        return perimeter;
     }
 
     public int getWidth() {
