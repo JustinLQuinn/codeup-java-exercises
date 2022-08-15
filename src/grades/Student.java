@@ -31,11 +31,10 @@ public class Student {
         for (Integer grade : grades) {
            gradeTotal += grade;
         }
-        System.out.println(gradeTotal);
-        return gradeTotal / Y;
+        return (gradeTotal / Y);
     }
 
-    protected static ArrayList getGrades() {
+    public static ArrayList<Integer> getGrades() {
         return grades;
     }
 
