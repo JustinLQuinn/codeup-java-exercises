@@ -55,7 +55,6 @@ public class Rectangle extends Quadrilateral implements Measurable{
     public static void main(String[] args) {
 //        System.out.println(getArea(24, 15));
 //        System.out.println(getPerimeter(12, 12));
-
     }
 
     @Override
